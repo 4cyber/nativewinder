@@ -2,7 +2,7 @@
 $nome = Read-Host "Inserisci il nome della cartella"
 
 # Crea l'app Expo
-npx create-expo-app@latest $nome
+npx create-expo-app@latest -t blank $nome
 
 # Naviga nella cartella appena creata
 cd $nome
