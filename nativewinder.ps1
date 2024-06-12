@@ -2,7 +2,7 @@
 $nome = Read-Host "Inserisci il nome della cartella"
 
 # Crea l'app Expo
-npx create-expo-app $nome
+npx create-expo-app@latest $nome
 
 # Naviga nella cartella appena creata
 cd $nome
@@ -57,4 +57,5 @@ export default function App() {
 }
 "@ | Set-Content -Path App.js -Force
 
+Write-Host "Esegui con npm run start"
 Write-Host "Template creato, buona programmazione!"
